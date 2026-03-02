@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.book {
+  width: 100%;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.book-card {
+  border-radius: 8px;
+  overflow: hidden;
+  width: 60%;
+  margin: 10px;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.book-card img {
+  width: 100%;
+  height: auto;
+}
+
+.header {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+p {
+  padding: 20px;
+  font-size: 16px;
+  text-align: center;
+  line-height: 0.6;
+}
+
+@media (max-width: 768px) {
+  .book {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .book-card {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
