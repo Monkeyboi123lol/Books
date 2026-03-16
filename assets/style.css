@@ -109,3 +109,47 @@ p {
   text-align: right;
   margin-top: 20px;
 }
+
+@media (max-width: 980px) {
+  .synopsis {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .synopsis-image {
+    width: 100%;
+    height: 300px;
+    margin: 20px 0;
+    order: 1;
+  }
+  .synopsis-text {
+    width: 100%;
+    height: 500px;
+    margin: 5px 0;
+    order: 2;
+  }
+
+  .synopsis-text p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .title {
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 400px) {
+  .welcome {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .welcome-image {
+    width: 100%;
+    height: 300px;
+    margin: 20px 0;
+    order: 1;
+  }
+}
